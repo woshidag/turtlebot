@@ -98,6 +98,19 @@
     rapp: turtlebot_rapps/ps3_teleop
     remappings: []
 
+- name: ""
+  role: PC Pairing
+  compatibility: rocon:/pc/*/hydro|indigo/precise|quantal|raring|saucy|trusty
+  display_name: xbox 360 Teleop
+  description: Control the TurtleBot with a xbox 360 Joystick.
+  max: 1
+  icon:
+    resource_name: turtlebot_rapps/ps3_bubble_icon.png
+  pairing:
+    rapp: turtlebot_rapps/xbox360_teleop
+    remappings: []
+
+
 - name: turtlebot_rviz_launchers/view_navigation.launch
   role: PC Pairing
   compatibility: rocon:/pc/*/hydro|indigo/precise|quantal|raring|saucy|trusty
@@ -110,7 +123,7 @@
     rapp: turtlebot_rapps/map_nav
     remappings: []
 
-- name: turtlebot_rviz_launchers/view_teleop_navigation.launch
+- name: rocon_make_a_map
   role: PC Pairing
   compatibility: rocon:/pc/*/hydro|indigo/precise|quantal|raring|saucy|trusty
   display_name: Make A Map
@@ -119,7 +132,7 @@
   icon:
     resource_name: turtlebot_rapps/make_a_map_bubble_icon.png
   pairing:
-    rapp: rocon_apps/make_a_map
+    rapp: turtlebot_rapps/make_a_map
     remappings: []
 
 - name: turtlebot_rviz_launchers/view_robot.launch
